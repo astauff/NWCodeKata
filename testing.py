@@ -41,3 +41,6 @@ class TestTimeCalc(unittest.TestCase):
         self.assertRaises(ValueError, check_input, '-55pm', '2am', '8pm')
         self.assertRaises(ValueError, check_input, '5pm', '-22am', '8pm')
         self.assertRaises(ValueError, check_input, '5pm', '2am', '-88pm')
+        self.assertRaises(ValueError, check_input, '5:30pm', '2am', '8pm')
+        self.assertRaises(ValueError, check_input, '5pm', '2:30am', '8pm')
+        self.assertRaises(ValueError, check_input, '5pm', '2am', '8:30pm')
