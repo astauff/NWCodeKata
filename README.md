@@ -1,6 +1,7 @@
 # NWCodeKata
 
 Author: Andrew Stauffer
+
 Project: Solution to the Babysitter Kata
 
 The solution to this kata is implemented in Python3.
